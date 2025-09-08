@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AU Journey - Terms of Service</title>
 
   <!-- Outfit Font -->
@@ -17,7 +17,6 @@
       color: #333;
       line-height: 1.6;
     }
-
     .container {
       max-width: 900px;
       margin: auto;
@@ -26,53 +25,36 @@
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     }
-
     h1 {
       font-weight: 500; /* Outfit-Medium */
       text-align: center;
       color: #E67E22; /* AU Journey Orange */
       margin-bottom: 10px;
     }
-
     h2 {
       font-weight: 500;
       color: #2c3e50;
       margin-top: 30px;
     }
-
     p, li {
       font-weight: 400; /* Outfit-Regular */
       margin-bottom: 15px;
     }
-
     .update-date {
       text-align: center;
       font-size: 14px;
       color: #777;
       margin-bottom: 30px;
     }
-
-    ul {
-      padding-left: 20px;
-      margin-bottom: 15px;
-    }
-
-    a {
-      color: #E67E22;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
+    ul { padding-left: 20px; margin-bottom: 15px; }
+    a { color: #E67E22; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     footer {
       text-align: center;
       font-size: 14px;
       color: #777;
       margin-top: 40px;
     }
-
     .warning {
       background-color: #fff8e1;
       border-left: 4px solid #E67E22;
@@ -87,44 +69,69 @@
 <body>
   <div class="container">
     <h1>Terms of Service</h1>
-    <p class="update-date">Last updated: July 2025</p>
+    <p class="update-date">Last updated: September 2025</p>
 
     <h2>1. Acceptance of Terms</h2>
-    <p>By downloading, installing, or using AU Journey, you agree to these Terms of Service and our Privacy Policy. If you do not agree, please do not use the app.</p>
+    <p>By downloading, installing, or using AU Journey, you agree to these Terms of Service and our <a href="https://au-journey.github.io/au-journey-legal/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>. If you do not agree, please do not use the app.</p>
 
     <h2>2. Description of Service</h2>
-    <p>AU Journey is designed to help students and faculty navigate Assumption University, track achievements, and access campus-related information. Features may include map navigation, QR-based achievements, and informational content.</p>
+    <p>AU Journey helps students and faculty navigate Assumption University, view coach/transport information, and collect on-campus achievements. Features may include map navigation, QR-based achievements, and informational content (including web content opened within the app).</p>
 
-<!--     <h2>3. User Accounts</h2> -->
-<!--     <p>AU Journey uses Microsoft Authentication for login. You are responsible for maintaining the confidentiality of your login credentials. We do not access or store your password.</p> -->
-
-    <h2>3. User Accounts</h2>
-    <p>AU Journey does not require you to create or manage a user account. You can use the app without providing login credentials.</p>
-
-    <h2>4. Permitted Use</h2>
+    <h2>3. Accounts & Authentication (Microsoft Entra ID)</h2>
     <ul>
-      <li>You agree to use AU Journey only for lawful purposes related to your campus experience.</li>
-      <li>You must not attempt to hack, reverse engineer, or disrupt the functionality of the app.</li>
+      <li>AU Journey may require institutional sign-in using Microsoft Authentication (Entra ID) for Assumption University students/staff.</li>
+      <li>We do not access or store your password. Authentication is handled by Microsoft. Access tokens are stored securely on your device.</li>
+      <li>You are responsible for maintaining the security of your device and any credentials, and for complying with your institution’s account policies.</li>
+      <li>If a read-only “Demo Mode” is provided, it may limit features and data.</li>
     </ul>
 
-    <h2>5. Data Handling</h2>
-    <p>We respect your privacy. Please review our <a href="https://au-journey.github.io/au-journey-legal/privacy-policy/" target="_blank">Privacy Policy</a> to understand how we collect and use data.</p>
+    <h2>4. Permitted Use & Prohibited Conduct</h2>
+    <ul>
+      <li>Use the app only for lawful purposes related to your campus experience.</li>
+      <li>Do not decompile, reverse engineer, scrape, interfere with, or overload the service or its data sources.</li>
+      <li>Do not attempt to bypass authentication, security, or access controls.</li>
+    </ul>
 
     <div class="warning">
-      <strong>Important:</strong> Achievements are stored locally on your device. If you delete the app, all collected achievements will be permanently lost. Currently, AU Journey does not provide cloud sync or backup for achievements.
+      <strong>Important:</strong> Achievements are stored locally on your device. If you delete the app, all collected achievements will be permanently lost. AU Journey does not currently provide cloud sync or backup for achievements.
     </div>
 
-    <h2>6. Third-Party Services</h2>
-    <p>The app relies on open-source libraries such as three.js. We are not responsible for their terms or policies. Refer to their respective documentation for details.</p>
+    <h2>5. External Links & Third-Party Services</h2>
+    <ul>
+      <li><strong>GitHub Pages (External Links):</strong> The Coach timetable and certain pages may be hosted externally (e.g., GitHub Pages). When opened, the external site may receive standard technical information (e.g., IP address, browser/OS) to serve the page. Please review the external site’s terms and privacy policy.</li>
+      <li><strong>Microsoft Entra ID (Azure AD):</strong> Provides authentication for AU accounts. See Microsoft’s terms and privacy policy.</li>
+      <li><strong>Open-source libraries (e.g., three.js):</strong> Used for rendering/visualization; you are subject to their licenses and terms.</li>
+    </ul>
 
-    <h2>7. Disclaimer & Limitation of Liability</h2>
-    <p>AU Journey is provided "as is" without warranties of any kind. We do not guarantee that the app will be error-free or uninterrupted. We are not liable for any damages resulting from the use or inability to use the app.</p>
+    <h2>6. Coach Feature & Timetable (BETA)</h2>
+    <p>The coach status and timetable features are currently provided as a <strong>beta</strong>. Actual coach availability and times may vary based on service conditions and hardware/IoT integrations. We do not guarantee the accuracy, continuity, or real-time nature of this information, and it should be used for guidance only.</p>
 
-    <h2>8. Changes to These Terms</h2>
-    <p>We may update these Terms from time to time. Continued use of the app after changes indicates your acceptance of the updated Terms.</p>
+    <h2>7. Data Handling</h2>
+    <p>We respect your privacy. Please review our <a href="https://au-journey.github.io/au-journey-legal/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> to understand how we collect, use, and protect information. We do not sell or use personal data for advertising or analytics.</p>
 
-    <h2>9. Contact Us</h2>
-    <p>If you have any questions about these Terms, contact us at: <a href="mailto:tramtrackers@gmail.com">tramtrackers@gmail.com</a></p>
+    <h2>8. Intellectual Property</h2>
+    <p>AU Journey, including its name, branding, UI, and content, is owned by the AU Journey team or its licensors. You are granted a limited, non-exclusive, non-transferable license to use the app for personal, non-commercial purposes, subject to these Terms.</p>
+
+    <h2>9. Service Availability, Changes & Updates</h2>
+    <p>We may modify, suspend, or discontinue features (including beta features) at any time. We may release updates that change how the app works. Continued use after changes indicates your acceptance of the updated Terms.</p>
+
+    <h2>10. Disclaimer of Warranties</h2>
+    <p>AU Journey is provided “as is” and “as available,” without warranties of any kind, express or implied. We do not warrant that the app will be uninterrupted, error-free, or that information (including coach status/timetables) will be accurate or current.</p>
+
+    <h2>11. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, AU Journey and its contributors will not be liable for any indirect, incidental, special, consequential, or exemplary damages, or for any loss of data, arising from or related to your use of the app.</p>
+
+    <h2>12. Termination</h2>
+    <p>We may suspend or terminate your access if we believe you have violated these Terms or used the app in a manner that may cause harm. Upon termination, your right to use the app ceases immediately.</p>
+
+    <h2>13. Governing Law</h2>
+    <p>These Terms are governed by the laws of Thailand, without regard to its conflict of law principles. Courts located in Thailand shall have exclusive jurisdiction over disputes arising from these Terms or the app.</p>
+
+    <h2>14. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. Material changes will be reflected in the “Last updated” date above. Your continued use of the app after changes becomes effective constitutes acceptance of the updated Terms.</p>
+
+    <h2>15. Contact Us</h2>
+    <p>If you have questions about these Terms, contact us at: <a href="mailto:tramtrackers@gmail.com">tramtrackers@gmail.com</a></p>
 
     <footer>
       © 2025 AU Journey. All rights reserved.
